@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* hero section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+  color: white;
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  max-width: 500px;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+.hero-icon {
+  width: 40px;
+  margin-bottom: 1em;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: #a8fde2;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.hero button {
+  padding: 0.8em 1.5em;
+  background-color: #72ffd8;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+/* top products section */
+
+.top-products {
+    text-align: center;
+    padding: 3em 1em;
+    color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-products h2 {
+    font-size: 2em;
+    color: #A8FFE3;
+    margin-bottom: 0.3em;
+}
+
+.top-products p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 2em;
+    padding: 1em;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    color: #111;
+    padding: 1.5em 1em;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    object-fit: contain;
+    max-height: 160px;
+}
+
+.product-card h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0.4em 0 0.2em;
+}
+
+.product-card p {
+    font-size: 0.95em;
+    color: #444;
+    flex-grow: 1;
+    margin-bottom: 0.8em;
+}
+
+.product-card span {
+    font-weight: bold;
+    color: #000;
+    margin-top: auto;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 2em;
+    color: #A8FFE3;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+
+.view-all:hover {
+    opacity: 0.7;
+}
+
+/* improv 1 */
+.opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lisa-banner {
+    width: 100%;
+}
+
+.opening h3 {
+    font-size: 2em;
+    color: #A8FFE3;
+    margin-bottom: 0;
+}
+
+.opening p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.opening-banner {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 100%;
+}
+
+.inside-banner {
+    position: absolute;
+    bottom: 45%;
+    left: 5%;
+}
+
+.inside-banner h2 {
+    font-size: 2.5em;
+    color: #A8FFE3;
+    margin-bottom: 0.3em;
+}
+
+.inside-banner h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+/* deals */
+
+.deals-intro {
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 32px 16px 0;
+}
+
+.deals-intro h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #A8FFE3;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.deals-intro p {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: -30px;
+}
+
+.deals {
+    width: 100%;
+    background-color: black;
+    padding: 60px 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.deals-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #181818;
+    border-radius: 24px;
+    padding: 40px;
+    width: 90%;
+    margin: auto;
+    max-width: 1400px;
+    gap: 40px;
+    color: white;
+}
+
+.deals-slide.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.deals-image {
+    flex: 1;
+}
+
+.deals-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.deals-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deals-text h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.deals-text p {
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.learn-more-button {
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+
+.learn-more-button:hover {
+    background-color: #a8fde2;
+    color: black;
+}
+
+.highlight {
+    color: #A8FFE3;
+    font-weight: 700;
+}
+
+.deal-offer {
+    font-size: 20px;
+    font-weight: 600;
+    color: #72ffd8; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.deals-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    margin-top: 4px;
+    gap: 16px;
+}
+
+/* carousel nav */
+
+.deals-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    position: relative;
+}
+
+.deals-slides {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    border-radius: 0%;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.arrow-left {
+    left: 32px;
+    max-width: calc(50% - 40px);
+}
+
+.arrow-right {
+    right: 32px;
+    max-width: calc(50% - 40px);
+}
+
+.arrow img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.deals-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #A8FFE3;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-content {
+        left: 50% !important;
+        top: 20% !important;
+        transform: translateX(-50%);
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .hero button {
+        display: block;
+        margin: 1.5em auto;
+    }
+
+    .hero-image img {
+        max-height: 300px;
+        height: auto;
+    }
+
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1em;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    
+    .deals-slide {
+        flex-direction: column !important;
+        padding: 20px !important;
+        gap: 20px !important;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .deals-image,
+    .deals-text {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .deals-image img {
+        max-height: 250px;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    .deals-text h3 {
+        font-size: 1.8em;
+    }
+
+    .opening h3 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .opening-banner {
+        position: relative;
+        align-items: center;
+    }
+
+    .inside-banner {
+        position: static;
+        text-align: center;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .deals-text p {
+        font-size: 1.1em;
+    }
+
+
+    .arrow-left {
+        left: 8px !important;
+    }
+
+    .arrow-right {
+        right: 8px !important;
+    }
+
+}
+
+

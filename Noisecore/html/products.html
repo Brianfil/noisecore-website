@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Noisecore</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container-logo">
+                <img src="../../asset/Group 59.png" alt="noisecore logo"/>
+            </div>
+            
+            <!-- for 768px -->
+            <button type="button" id="openDrawer" class="drawer-toggle">☰</button>
+
+            
+            <!-- nav links utk desktop -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/products.html" class="underlined">Products</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/deals.html">Deals</a></li>
+                <li><a href="../html/login.html">Login</a></li>
+            </ul>
+
+            <div class="searchbar">
+                <input type="text" placeholder="Search"/>
+                <button type="button" aria-label="Search">
+                    <img src="../../asset/search-bar-01.png" alt="Search" class="search-icon">
+                </button>
+            </div>
+
+            <!-- sliding menu toggle untuk hp -->
+            <div class="drawer-menu" id="drawerMenu">
+                <div class="drawer-header">
+                    <button id="closeDrawer" class="drawer-close">✕</button>
+                </div>
+                <ul class="drawer-links">
+                  <li><a href="../html/index.html" class="underlined">Home</a></li>
+                  <li><a href="../html/products.html">Products</a></li>
+                  <li><a href="../html/about.html">About</a></li>
+                  <li><a href="../html/deals.html">Deals</a></li>
+                  <li><a href="../html/login.html">Login</a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+    <div class="opening-word">
+        <h1>Products</h1>
+    </div>
+
+    <section class="products-opening">
+        <!-- slide 1 -->
+        <div class="products-slide active">
+            <div class="products-visual">
+                <div class="products-left">
+                    <img src="../../asset2/slide1main.jpg" alt="Main Product" />
+                </div>
+                <div class="products-right">
+                    <img src="../../asset2/slide1rightup.jpg" alt="Right Top Product" />
+                    <img src="../../asset2/slide1rightdown.jpg" alt="Right Bottom Product" />
+                </div>
+            </div>
+            <div class="products-info">
+                <h2>NoiseCore Spectro 3 Portable Wireless ANC Headphone</h2>
+                <p>$299.99</p>
+            </div>
+        </div>
+        <!-- slide 2 -->
+        <div class="products-slide">
+            <div class="products-visual">
+                <div class="products-left">
+                    <img src="../../asset2/slide2main.jpg" alt="Main Product" />
+                </div>
+                <div class="products-right">
+                    <img src="../../asset2/sllilde2rightdown.jpg" alt="Right Top Product" />
+                    <img src="../../asset2/slide2rightop.jpg" alt="Right Bottom Product" />
+                </div>
+            </div>
+            <div class="products-info">
+                <h2>NoiseCore Aero | The Greatest Innovation of Earbuds</h2>
+                <p>$399.99</p>
+            </div>
+        </div>
+        <!-- slide 3 -->
+        <div class="products-slide">
+            <div class="products-visual">
+                <div class="products-left">
+                    <img src="../../asset2/slide3main.jpg" alt="Main Product" />
+                </div>
+                <div class="products-right">
+                    <img src="../../asset2/slide3topright.jpg" alt="Right Top Product" />
+                    <img src="../../asset2/slide3topdown.jpg" alt="Right Bottom Product" />
+                </div>
+            </div>
+            <div class="products-info">
+                <h2>NoiseCore Clair Absolute</h2>
+                <p>$159.99</p>
+            </div>
+        </div>
+
+        <!-- nav arrows -->
+        <img src="../../asset2/prevarrow.png" class="products-nav prev" alt="Previous" />
+        <img src="../../asset2/nextarrow.png" class="products-nav next" alt="Next" />
+
+        <!-- slid indicator -->
+        <div class="products-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    
+    <!-- products section with filter -->
+    <section class="products-section">
+        <!-- Filter Buttons -->
+        <div class="products-filter">
+            <button class="filter-btn active" data-product-filter="all">Featured</button>
+            <button class="filter-btn" data-product-filter="earbuds">Earbuds</button>
+            <button class="filter-btn" data-product-filter="open-earbuds">Open-Earbuds</button>
+            <button class="filter-btn" data-product-filter="headphone">Headphone</button>
+            <button class="filter-btn" data-product-filter="headset">Headset</button>
+            <button class="filter-btn" data-product-filter="speaker">Speaker</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="products-grid">
+            <!-- earbuds -->
+            <div class="product-card" data-category="earbuds">
+                <img src="../../productsasset/noisecoreaero.png" alt="NoiseCore Aero" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Aero</h3>
+                    <p class="product-subcategory">Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.7</span>
+                    </div>
+                    <p class="product-price">$299.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="earbuds">
+                <img src="../../productsasset/noisecorewaves.png" alt="NoiseCore Waves 4" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Waves 4</h3>
+                    <p class="product-subcategory">Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.7</span>
+                    </div>
+                    <p class="product-price">$79.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="earbuds">
+                <img src="../../productsasset/noisecoreclair.png" alt="NoiseCore Clair 2" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Clair 2</h3>
+                    <p class="product-subcategory">Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.7</span>
+                    </div>
+                    <p class="product-price">$159.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="earbuds">
+                <img src="../../productsasset/rx0.png" alt="NoiseCore RX0" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore RX0</h3>
+                    <p class="product-subcategory">Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.9</span>
+                    </div>
+                    <p class="product-price">$259.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="earbuds">
+                <img src="../../productsasset/stratagem.png" alt="NoiseCore Stratagem" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Stratagem</h3>
+                    <p class="product-subcategory">Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.9</span>
+                    </div>
+                    <p class="product-price">$209.99</p>
+                </div>
+            </div>
+
+            <!-- open earbuds -->
+            <div class="product-card" data-category="open-earbuds">
+                <img src="../../productsasset/noisecoreimpactv.png" alt="NoiseCore Impact V" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Impact V</h3>
+                    <p class="product-subcategory">Open-Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.9</span>
+                    </div>
+                    <p class="product-price">$209.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="open-earbuds">
+                <img src="../../productsasset/noisecoref22a10.png" alt="NoiseCore F22/A-10" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore F22/A-10</h3>
+                    <p class="product-subcategory">Open-Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.9</span>
+                    </div>
+                    <p class="product-price">$399.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="open-earbuds">
+                <img src="../../productsasset/noisecoreclair3.png" alt="NoiseCore Clair 3" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Claire 3 Feat. JBL</h3>
+                    <p class="product-subcategory">Open-Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.9</span>
+                    </div>
+                    <p class="product-price">$199.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="open-earbuds">
+                <img src="../../productsasset/NoiseCoreOpenStratagem.png" alt="NoiseCore Open Stratagem" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Open Stratagem</h3>
+                    <p class="product-subcategory">Open-Earbuds</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.1</span>
+                    </div>
+                    <p class="product-price">$99.99</p>
+                </div>
+            </div>
+            
+            <!-- headphone -->
+            <div class="product-card" data-category="headphone">
+                <img src="../../productsasset/spectro3.png" alt="NoiseCore Spectro 3" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Spectro 3</h3>
+                    <p class="product-subcategory">Headphone</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.8</span>
+                    </div>
+                    <p class="product-price">$289.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="headphone">
+                <img src="../../productsasset/headphoneroverslim.png" alt="NoiseCore Rover Slim" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Rover Slim</h3>
+                    <p class="product-subcategory">Headphone</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.6</span>
+                    </div>
+                    <p class="product-price">$99.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="headphone">
+                <img src="../../productsasset/headphonerover.png" alt="NoiseCore Rover" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Rover</h3>
+                    <p class="product-subcategory">Headphone</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.8</span>
+                    </div>
+                    <p class="product-price">$169.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="headphone">
+                <img src="../../productsasset/headphonespectro2.png" alt="NoiseCore Spectro 2" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Spectro 2</h3>
+                    <p class="product-subcategory">Headphone</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.4</span>
+                    </div>
+                    <p class="product-price">$119.99</p>
+                </div>
+            </div>
+
+            <!-- headset -->
+
+            <div class="product-card" data-category="headset">
+                <img src="../../productsasset/headsetastral.png" alt="NoiseCore Astral 2" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Astral 2</h3>
+                    <p class="product-subcategory">Headset</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.3</span>
+                    </div>
+                    <p class="product-price">$229.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="headset">
+                <img src="../../productsasset/headsetastralpro.png" alt="NoiseCore Astral Pro" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Astral Pro</h3>
+                    <p class="product-subcategory">Headset</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.8</span>
+                    </div>
+                    <p class="product-price">$249.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="headset">
+                <img src="../../productsasset/headsetastral33.png" alt="NoiseCore Astral 733" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Astral 733</h3>
+                    <p class="product-subcategory">Headset</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.9</span>
+                    </div>
+                    <p class="product-price">$169.99</p>
+                </div>
+            </div>
+
+            <!-- speaker -->
+            <div class="product-card" data-category="speaker">
+                <img src="../../productsasset/NoiseCoreLapwing.png" alt="NoiseCore Lapwing" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Lapwing</h3>
+                    <p class="product-subcategory">Speaker</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.8</span>
+                    </div>
+                    <p class="product-price">$199.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="speaker">
+                <img src="../../productsasset/NoisecoreGaia4Max.png" alt="NoiseCore Gaia 4 Max" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Gaia 4 Max</h3>
+                    <p class="product-subcategory">Speaker</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.0</span>
+                    </div>
+                    <p class="product-price">$359.99</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="speaker">
+                <img src="../../productsasset/NoiseCoreGale.png" alt="NoiseCore Gale" class="product-img" />
+                <div class="product-info">
+                    <h3>NoiseCore Gale</h3>
+                    <p class="product-subcategory">Speaker</p>
+                    <div class="product-rating">
+                        <span class="star">★</span>
+                        <span class="rating-score">4.6</span>
+                    </div>
+                    <p class="product-price">$99.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- closing -->
+
+    <div class="products-closing">
+        <h2>Join the Noisecore Membership</h2>
+        <p>Get exclusive perks and <strong>10% off</strong> your first purchase.</p>
+        <a href="signup.html" class="join-button">Sign Up Now</a>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../../asset/Group 59.png" alt="Noisecore Logo" class="footer-logo" />
+            <p>©2025 Noisecore. All Rights Reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERMS & CONDITION</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">FAQ</a>
+            <a href="#">SUPPORT</a>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

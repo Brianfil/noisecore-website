@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noisecore | Home</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container-logo">
+                <img src="../../asset/Group 59.png" alt="noisecore logo"/>
+            </div>
+            
+            <!-- utk 768px -->
+            <button type="button" id="openDrawer" class="drawer-toggle">☰</button>
+
+            
+            <!-- nav links utk desktop -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../html/index.html" class="underlined">Home</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/deals.html">Deals</a></li>
+                <li><a href="../html/login.html">Login</a></li>
+            </ul>
+
+            <div class="searchbar">
+                <input type="text" placeholder="Search"/>
+                <button type="button" aria-label="Search">
+                    <img src="../../asset/search-bar-01.png" alt="Search" class="search-icon">
+                </button>
+            </div>
+
+            <!-- sliding menu toggle untuk hp -->
+            <div class="drawer-menu" id="drawerMenu">
+                <div class="drawer-header">
+                    <button id="closeDrawer" class="drawer-close">✕</button>
+                </div>
+                <ul class="drawer-links">
+                  <li><a href="../html/index.html" class="underlined">Home</a></li>
+                  <li><a href="../html/products.html">Products</a></li>
+                  <li><a href="../html/about.html">About</a></li>
+                  <li><a href="../html/deals.html">Deals</a></li>
+                  <li><a href="../html/login.html">Login</a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-image">
+            <img src="../../asset/herobanner.jpg" alt="Noisecore Hero Image" />
+        </div>
+        <div class="hero-content">
+            <h1>Feel the Sound of Noisecore Wherever You Are</h1>
+            <p>Over 1 Billion Users Around The World</p>
+            <button onclick="location.href='../html/signup.html'">
+            JOIN US
+            </button>
+        </div>
+    </section>
+
+
+    <section class="top-products">
+        <h2>What's Popular From Our Products?</h2>
+        <p>These are Our Current Best Sellers</p>
+
+        <div class="product-grid">
+            <!-- product 1 -->
+             <div class="product-card">
+                <img src="../../asset/waves4.png" alt="NoiseCore Waves 4 Pro" />
+                <h3>NoiseCore Waves 4 Pro</h3>
+                <p>The newest Earbuds of the Waves Series</p>
+                <span>$79.00</span>
+             </div>
+            <!-- product 2 -->
+            <div class="product-card">
+                <img src="../../asset/spectro.png" alt="NoiseCore Spectro 3" />
+                <h3>NoiseCore Spectro 3</h3>
+                <p>Premium Sound, 7.1 Surround Sound with Triple Connection</p>
+                <span>$149.99</span>
+            </div>
+
+            <!-- product 3 -->
+            <div class="product-card">
+                <img src="../../asset/cropped_speaker 4.png" alt="Noisecore Gaia 4 Max">
+                <h3>NoiseCore Gaia 4 Max</h3>
+                <p>Feel the newly upgraded bass with the new Gaia 4 Max</p>
+                <span>$379.99</span>
+            </div>
+
+            <!-- product 4 -->
+            <div class="product-card">
+                <img src="../../asset/stratagem.png" alt="NoiseCore Stratagem 2"/>
+                <h3>NoiseCore Stratagem 2</h3>
+                <p>The most Premium Sound with Stratagem Series</p>
+                <span>$179.99</span>
+            </div>
+
+            <!-- product 5 -->
+            <div class="product-card">
+                <img src="../../asset/impact v.png" alt="NoiseCore Impact V" />
+                <h3>NoiseCore Impact V</h3>
+                <p>Elegant and Sleek Design, with the Impact Series at Hand</p>
+                <span>$239.99</span>
+            </div>
+            
+            <!-- product 6 -->
+             <div class="product-card">
+                <img src="../../asset/image 122.png" alt="NoiseCore Aero" />
+                <h3>NoiseCore Aero</h3>
+                <p>Experience the most Advanced Earbuds with the new Aero Series</p>
+                <span>$299.99</span>
+             </div>
+        </div>
+
+        <!-- view all button -->
+            <a href="../html/products.html" class="view-all">VIEW ALL</a>
+    </section>
+
+    <!-- improv banner -->
+     <section class="opening">
+        <h3>Hear What Others Has to Say About Our Products</h3>
+        <p>Including Your Favorite Artists</p>
+        <div class="opening-banner">
+            <img src="../../asset2/lisa-banner.png" alt="Lisa Banner" class="lisa-banner">
+            <div class="inside-banner">
+                <h2>NoiseCore Impact V Earbuds</h2>
+                <h1>"My Personal Favorite Earbuds"</h1>
+            </div>
+        </div>
+    </section>
+    
+    <!-- home deals -->
+    <section class="deals-intro">
+        <h2>Deals and Membership Perks</h2>
+        <p>Considered Joining Us Yet?</p>
+    </section>
+    <section class="deals">
+        <button class="arrow arrow-left" id="prevSlide">
+            <img src="../../asset2/prevarrow.png" alt="Previous" />
+        </button>
+        <div class="deals-wrapper">
+            <div class="deals-slides" id="dealsSlides">
+        <!-- slide 1 -->
+                <div class="deals-slide">
+                    <div class="deals-image">
+                    <img src="../../asset2/sony.jpg" alt="Sony Picture" />
+                    </div>
+                    <div class="deals-text">
+                        <span class="deal-offer">Up to 20% Off for Members</span>
+                        <h3><span class="highlight">NOISECORE</span> STRATAGEM SERIES</h3>
+                        <p>Powered By SONY, Adaptive Noise Cancelling, NoisCore Stratagem Will Take Your Listening to The Next Level</p>
+                        <a href="../html/deals.html" class="learn-more-button">Learn More</a>
+                    </div>
+                </div>
+            <!-- slide 2 -->
+                <div class="deals-slide">
+                    <div class="deals-image">
+                        <img src="../../asset2/4peoplein1.jpg" alt="lisaandfriends" />
+                    </div>
+                    <div class="deals-text">
+                        <span class="deal-offer">Summer Sale - 5% OFF</span>
+                        <h3><span class="highlight">NOISECORE</span> IMPACT V</h3>
+                        <p>True Wireless Earbuds with Deep Bass and Elegant Design</p>
+                        <a href="../html/deals.html" class="learn-more-button">Learn More</a>
+                    </div>
+                </div>
+            <!-- slide 3 -->
+                <div class="deals-slide">
+                    <div class="deals-image">
+                        <img src="../../asset2/headsetalamak.jpg" alt="sus" />
+                    </div>
+                    <div class="deals-text">
+                        <span class="deal-offer">Discount Up to 20%</span>
+                        <h3><span class="highlight">NOISECORE</span> Astral Series</h3>
+                        <p>Hear Every Footsteps and Noise, Start Locking In and Winning</p>
+                        <a href="../html/deals.html" class="learn-more-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <button class="arrow arrow-right" id="nextSlide">
+                <img src="../../asset2/nextarrow.png" alt="Next" />
+            </button>
+        <div class="deals-controls"> 
+            <div class="deals-dots" id="dealsDots"></div>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../../asset/Group 59.png" alt="Noisecore Logo" class="footer-logo" />
+            <p>©2025 Noisecore. All Rights Reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERMS & CONDITION</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">FAQ</a>
+            <a href="#">SUPPORT</a>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>

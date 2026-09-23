@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals | Noisecore</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/deals.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container-logo">
+                <img src="../../asset/Group 59.png" alt="noisecore logo"/>
+            </div>
+            
+            <!-- for 768px -->
+            <button type="button" id="openDrawer" class="drawer-toggle">☰</button>
+
+            
+            <!-- nav links utk desktop -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/deals.html" class="underlined">Deals</a></li>
+                <li><a href="../html/login.html">Login</a></li>
+            </ul>
+
+            <div class="searchbar">
+                <input type="text" placeholder="Search"/>
+                <button type="button" aria-label="Search">
+                    <img src="../../asset/search-bar-01.png" alt="Search" class="search-icon">
+                </button>
+            </div>
+
+            <!-- sliding menu toggle untuk hp -->
+            <div class="drawer-menu" id="drawerMenu">
+                <div class="drawer-header">
+                    <button id="closeDrawer" class="drawer-close">✕</button>
+                </div>
+                <ul class="drawer-links">
+                  <li><a href="../html/index.html">Home</a></li>
+                  <li><a href="../html/products.html">Products</a></li>
+                  <li><a href="../html/about.html">About</a></li>
+                  <li><a href="../html/deals.html">Deals</a></li>
+                  <li><a href="../html/login.html">Login</a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+
+    <div class="opening-text">
+        <h1>Deals</h1>
+        <p>Get the best deals on our products. Limited time offers available!</p>
+    </div>
+
+    
+    <section class="deals">
+        <button class="arrow arrow-left" id="prevSlide">
+            <img src="../../asset2/prevarrow.png" alt="Previous" />
+        </button>
+        <div class="deals-wrapper">
+            <div class="deals-slides" id="dealsSlides">
+        <!-- slide 1 -->
+                <div class="deals-slide">
+                    <div class="deals-image">
+                    <img src="../../asset2/sony.jpg" alt="Sony Picture" />
+                    </div>
+                    <div class="deals-text">
+                        <span class="deal-offer">Up to 20% Off for Members</span>
+                        <h3><span class="highlight">NOISECORE</span> STRATAGEM SERIES</h3>
+                        <p>Powered By SONY, Adaptive Noise Cancelling, NoisCore Stratagem Will Take Your Listening to The Next Level</p>
+                    </div>
+                </div>
+            <!-- slide 2 -->
+                <div class="deals-slide">
+                    <div class="deals-image">
+                        <img src="../../asset2/4peoplein1.jpg" alt="lisaandfriends" />
+                    </div>
+                    <div class="deals-text">
+                        <span class="deal-offer">Summer Sale - 5% OFF</span>
+                        <h3><span class="highlight">NOISECORE</span> IMPACT V</h3>
+                        <p>True Wireless Earbuds with Deep Bass and Elegant Design</p>
+                    </div>
+                </div>
+            <!-- slide 3 -->
+                <div class="deals-slide">
+                    <div class="deals-image">
+                        <img src="../../asset2/headsetalamak.jpg" alt="sus" />
+                    </div>
+                    <div class="deals-text">
+                        <span class="deal-offer">Discount Up to 20%</span>
+                        <h3><span class="highlight">NOISECORE</span> Astral Series</h3>
+                        <p>Hear Every Footsteps and Noise, Start Locking In and Winning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <button class="arrow arrow-right" id="nextSlide">
+                <img src="../../asset2/nextarrow.png" alt="Next" />
+            </button>
+        <div class="deals-controls"> 
+            <div class="deals-dots" id="dealsDots"></div>
+        </div>
+    </section>
+
+    <section class="featured-deals">
+        <div class="featured-intro">
+            <h1>Featured Deals</h1>
+        </div>
+
+        <div class="product-grid">
+            <!-- card list -->
+            <div class="product-card">
+                <div class="badge">5% OFF</div>
+                <img src="../../productsasset/noisecoreimpactv.png" alt="NoiseCore Impact V" class="product-image" />
+                <h3 class="product-title">NoiseCore Impact V</h3>
+                <p class="product-description">The Most Elegant and Stylish Earbuds</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/stratagem.png" alt="NoiseCore Stratagem" class="product-image" />
+                <h3 class="product-title">NoiseCore Stratagem</h3>
+                <p class="product-description">Experience premium sound with ANC feature</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/headsetastral.png" alt="NoiseCore Astral" class="product-image" />
+                <h3 class="product-title">NoiseCore Astral</h3>
+                <p class="product-description">The Headset of All Time</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$269.99</span>
+                    <span class="discounted-price">$229.99</span>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="badge">5% OFF</div>
+                <img src="../../productsasset/noisecoreimpactv.png" alt="NoiseCore Impact V" class="product-image" />
+                <h3 class="product-title">NoiseCore Impact V</h3>
+                <p class="product-description">The Most Elegant and Stylish Earbuds</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/stratagem.png" alt="NoiseCore Stratagem" class="product-image" />
+                <h3 class="product-title">NoiseCore Stratagem</h3>
+                <p class="product-description">Experience premium sound with ANC feature</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/headsetastral.png" alt="NoiseCore Astral" class="product-image" />
+                <h3 class="product-title">NoiseCore Astral</h3>
+                <p class="product-description">The Headset of All Time</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$269.99</span>
+                    <span class="discounted-price">$229.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">5% OFF</div>
+                <img src="../../productsasset/noisecoreimpactv.png" alt="NoiseCore Impact V" class="product-image" />
+                <h3 class="product-title">NoiseCore Impact V</h3>
+                <p class="product-description">The Most Elegant and Stylish Earbuds</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/stratagem.png" alt="NoiseCore Stratagem" class="product-image" />
+                <h3 class="product-title">NoiseCore Stratagem</h3>
+                <p class="product-description">Experience premium sound with ANC feature</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/headsetastral.png" alt="NoiseCore Astral" class="product-image" />
+                <h3 class="product-title">NoiseCore Astral</h3>
+                <p class="product-description">The Headset of All Time</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$269.99</span>
+                    <span class="discounted-price">$229.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">5% OFF</div>
+                <img src="../../productsasset/noisecoreimpactv.png" alt="NoiseCore Impact V" class="product-image" />
+                <h3 class="product-title">NoiseCore Impact V</h3>
+                <p class="product-description">The Most Elegant and Stylish Earbuds</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/stratagem.png" alt="NoiseCore Stratagem" class="product-image" />
+                <h3 class="product-title">NoiseCore Stratagem</h3>
+                <p class="product-description">Experience premium sound with ANC feature</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$238.99</span>
+                    <span class="discounted-price">$209.99</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="../../productsasset/headsetastral.png" alt="NoiseCore Astral" class="product-image" />
+                <h3 class="product-title">NoiseCore Astral</h3>
+                <p class="product-description">The Headset of All Time</p>
+
+                <div class="product-pricing">
+                    <span class="original-price">$269.99</span>
+                    <span class="discounted-price">$229.99</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- clsoing text -->
+    <section class="closing-text">
+        <p>Want To Obtain the Perks?</p>
+        <a href="../html/signup.html" class="join-btn">Join Us</a>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../../asset/Group 59.png" alt="Noisecore Logo" class="footer-logo" />
+            <p>©2025 Noisecore. All Rights Reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERMS & CONDITION</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">FAQ</a>
+            <a href="#">SUPPORT</a>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/deals.js"></script>
+</body>
+</html>
