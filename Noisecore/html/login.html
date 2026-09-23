@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Noisecore</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container-logo">
+                <img src="../../asset/Group 59.png" alt="noisecore logo"/>
+            </div>
+            
+            <!-- utk 768px -->
+            <button type="button" id="openDrawer" class="drawer-toggle">☰</button>
+
+            
+            <!-- nav links utk desktop -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/deals.html">Deals</a></li>
+                <li><a href="../html/login.html" class="underlined">Login</a></li>
+            </ul>
+
+            <div class="searchbar">
+                <input type="text" placeholder="Search"/>
+                <button type="button" aria-label="Search">
+                    <img src="../../asset/search-bar-01.png" alt="Search" class="search-icon">
+                </button>
+            </div>
+
+            <!-- sliding menu toggle untuk hp -->
+            <div class="drawer-menu" id="drawerMenu">
+                <div class="drawer-header">
+                    <button id="closeDrawer" class="drawer-close">✕</button>
+                </div>
+                <ul class="drawer-links">
+                  <li><a href="../html/index.html" class="underlined">Home</a></li>
+                  <li><a href="../html/products.html">Products</a></li>
+                  <li><a href="../html/about.html">About</a></li>
+                  <li><a href="../html/deals.html">Deals</a></li>
+                  <li><a href="../html/login.html">Login</a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-icon">
+                <img src="../../asset/Group 60.png" alt="User Icon" />
+                </div>
+            <h2>Login</h2>
+
+            <form id="loginForm">
+                <input type="email" placeholder="Email" id="email" />
+                <input type="password" placeholder="Password" id="password" />
+
+                <div class="login-options">
+                    <label>
+                        <input type="checkbox" id="remember" /> Keep Me Signed In
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">Log In</button>
+                <div class="google-login">
+                    <img src="../../asset/googlelogo.png" alt="Google" class="google-icon" />
+                    <span>Sign in with Google</span>
+                </div>
+                <p class="signup-prompt">Not a member yet? <a href="../html/signup.html">Join now</a></p>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../../asset/Group 59.png" alt="Noisecore Logo" class="footer-logo" />
+            <p>©2025 Noisecore. All Rights Reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERMS & CONDITION</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">FAQ</a>
+            <a href="#">SUPPORT</a>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

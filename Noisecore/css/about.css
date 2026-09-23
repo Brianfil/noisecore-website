@@ -1,0 +1,276 @@
+.about-intro {
+    background-color: #1b2e28; 
+    padding: 70px;
+    border-bottom: 1px solid #333;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    max-width: 550px;
+}
+
+.intro-quote {
+    font-size: 20px;
+    color: #a8ffe3;
+    font-style: italic;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+.about-text h2 {
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    text-align: center;
+    }
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* moving strip */
+
+.moving-strip {
+  overflow: hidden;
+  background-color: #0f1e1a; 
+  color: #a8ffe3; 
+  padding: 10px 0;
+  white-space: nowrap;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.moving-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* mission and values */
+
+.mission-section {
+    background-color: #0f1e1a;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mission-text {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    max-width: 550px;
+}
+
+.mission-text h3 {
+    text-transform: uppercase;
+    color: #a8ffe3;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.mission-text h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.mission-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.mission-image {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    text-align: center;
+}
+
+.mission-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* history section */
+
+.history-section {
+    background-color: #1b2e28;
+    padding: 80px 20px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.history-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    color: #a8ffe3;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    border-left: 3px solid #a8ffe3;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline-date {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #a8ffe3;
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: #a8ffe3;
+    border-radius: 50%;
+}
+
+/* scroll animation */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* join invitation */
+.about-join {
+    background-color: #0f1e1a;
+    color: #ffffff;
+    padding: 10px 20px 80px;
+    text-align: center;
+}
+
+.about-join-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-join h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+    color: #a8ffe3;
+}
+
+.about-join p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    color: #cccccc;
+}
+
+.about-join-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #a8ffe3;
+    color: #0f1e1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.about-join-button:hover {
+  background-color: #69d5ae;
+}
+
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        padding: 10px;
+    }
+    .mission-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .history-title {
+        font-size: 2rem;
+    }
+
+    .timeline-content {
+        font-size: 0.95rem;
+    }
+
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
